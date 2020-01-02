@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sweet 'n Spicy | Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Sweet 'n Spicy</h1>
+            <div class="menu">
+                <div class="line first"></div>
+                <div class="line second"></div>
+                <div class="line third"></div>
+            </div>
+            <div class="nav__wrapper">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="about.html" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="menu.html" class="nav__link">Menu</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="menu--intro">
+        <a href="burger.html" class="menu__link">
+            <div class="menu__category menu__card--burger"><h2 class="display2">Burgers</h2></div>
+        </a>
+        <a href="pizza.html" class="menu__link">
+            <div class="menu__category menu__card--pizza"><h2 class="display2">Pizzas</h2></div>
+        </a>
+        <a href="drink.html" class="menu__link">
+            <div class="menu__category menu__card--drink"><h2 class="display2">Drinks</h2></div>
+        </a>
+    </section>
+    <script src="js/main.js"></script>
+    <script>
+        const menuSelect = document.querySelector('.menu--intro');
+        function fadeIn(section) {
+            if (window.pageYOffset >= section.offsetTop - 600) {
+                section.style.opacity = '1';
+                section.style.transform = 'translate(0, 0)';
+            }
+        }
+
+        window.addEventListener('load', ()=>{
+        setTimeout(()=>{
+            fadeIn(menuSelect);
+        }, 1800);
+});
+    </script>
+</body>
+</html>
