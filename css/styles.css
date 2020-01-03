@@ -649,12 +649,19 @@ nav {
     border: 2px solid var(--black);
     padding: 15px;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: 95%;
 }
 
 .reserve__info {
     opacity: 0;
     transform: translate(0, 30px);
     transition: all 0.8s ease-out;
+}
+
+.error-text {
+    font-size: 0.875em;
+    color: var(--bright-orange);
 }
 
 /* Date Picker */
@@ -828,7 +835,7 @@ footer {
     /* Goal Intro */
     .goal--intro {
         padding: 20px 40px;
-        margin: 0 0 100px 0;
+        margin: 100px 0;
         display: flex;
         justify-content: space-between;
         align-items: center;

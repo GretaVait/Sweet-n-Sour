@@ -83,14 +83,17 @@
 
             <form class="contact__form">
                 <span class="form__placeholder">Name</span>
-                <input type="text">
+                <input type="text" id="name">
+                <span class="error-text"></span>
                 <span class="form__placeholder">Number</span>
-                <input type="number">
+                <input type="number" id="phone">
+                <span class="error-text"></span>
                 <span class="form__placeholder">E-mail</span>
-                <input type="email">
+                <input type="email" id="email">
+                <span class="error-text"></span>
                 <aside class="btn__aside">
                     <div class="btn--orange__outer">
-                        <a href="#" class="btn--orange">Reserve</a>
+                        <a href="#" class="btn--orange" id="submit">Reserve</a>
                     </div>
                 </aside>
             </form>
@@ -101,5 +104,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/animationContact.js"></script>
+    <script src="js/validate.js"></script>
 </body>
 </html>
