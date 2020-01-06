@@ -11,7 +11,9 @@
 <body>
     <header>
         <nav>
-            <h1 class="logo">Sweet 'n Spicy</h1>
+            <a href="index.html" class="logo--link">
+                <h1 class="logo">Sweet 'n Spicy</h1>
+            </a>
             <div class="menu">
                 <div class="line first"></div>
                 <div class="line second"></div>
@@ -26,7 +28,14 @@
                         <a class="nav__link" href="about.html">About</a>
                     </li>
                     <li class="nav__item">
-                        <a class="nav__link" href="menu.html">Menu</a>
+                        <div class="menu__dropdown">
+                            <button class="dropdown">Menu</button>
+                            <div class="dropdown__links">
+                            <a href="burger.html">Burgers</a>
+                            <a href="pizza.html">Pizzas</a>
+                            <a href="drink.html">Drinks</a>
+                            </div>
+                        </div>
                     </li>
                     <li class="nav__item">
                         <a class="nav__link" href="contact.html">Contact</a>
